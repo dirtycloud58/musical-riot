@@ -1,13 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-/* header */
 #header {
   width: 100vw;
   height: 60px;
@@ -35,21 +25,27 @@ body {
   cursor: pointer;
 }
 
+nav {
+  padding-top: 60px;
+}
+
 nav ul {
   position: fixed;
-  text-align: center;
-  margin-top: 60px;
-  transition: all 0.5s;
   width: 100vw;
   height: 100vh;
+  background-color: black;
   left: -100vw;
+  transition: all 0.5s;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-  height: 60px;
-  padding: 10px;
-  background-color: black;
   list-style: none;
+  text-align: center;
+  width: 100vw;
+  height: 50px;
+  padding-top: 20px;
 }
 
 nav a {
@@ -66,33 +62,27 @@ nav a:hover {
   left: 0;
 }
 
-/* article */
-.img {
-  width: 100vw;
-  height: auto;
-}
+@media only screen and (min-width: 768px) {
+  nav {
+    all: unset;
+  }
 
-.img-presentation {
-  max-width: 70vw;
-  display: flex;
-  margin: auto;
-  border-radius: 5px;
-}
+  nav ul {
+    all: unset;
+    position: fixed;
+    display: flex;
+    right: 0;
+  }
 
-.section {
-  width: 100vw;
-}
+  nav li {
+    all: unset;
+    padding: 2vw;
+  }
 
-h2, h3 {
-  text-align: center;
-  padding: 20px;
+  .burger {
+    display: none;
+  }
 }
-
-p {
-  padding: 20px;
-}
-
-/* footer */
 #footer {
   width: 100vw;
   height: 150px;
@@ -103,7 +93,6 @@ p {
 .info {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 5px;
 }
 
 .fab {
@@ -146,22 +135,46 @@ p {
 footer p {
   color: white;
   text-align: center;
+  font-size: small;
 }
 
-@media only screen and (min-width: 600px) {
-  nav ul {
-    all: unset;
-    position: fixed;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* article */
+.img {
+  width: 100vw;
+  height: auto;
+}
+
+.img-presentation {
+  width: 70vw;
+  max-width: 500px;
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.section {
+  width: 100vw;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
     display: flex;
-    right: 0;
   }
 
-  nav li {
-    all: unset;
-    padding: 2vw;
-  }
-
-  .burger {
-    display: none;
+  p {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

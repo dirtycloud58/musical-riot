@@ -136,6 +136,7 @@ footer p {
   color: white;
   text-align: center;
   font-size: small;
+  padding: 20px 20px 0 20px;
 }
 
 * {
@@ -167,14 +168,32 @@ body {
 
 h2, h3 {
   text-align: center;
+  margin: 15px;
 }
 
-@media only screen and (min-width: 768px) {
+p {
+  padding: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
   .section {
     display: flex;
+    flex-wrap: nowrap;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 2vw;
   }
 
-  p {
-    flex-direction: column;
+  .position1 {
+    flex-direction: row-reverse;
+  }
+
+  .position3 {
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .section {
+    width: 60vw;
   }
 }/*# sourceMappingURL=style.css.map */

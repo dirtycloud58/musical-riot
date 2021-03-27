@@ -1,0 +1,90 @@
+#header
+{
+  width: 100vw;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 100;
+}
+.toggle
+{
+  display: none;
+}
+.burger
+{
+  position: absolute;
+  right: 0;
+  color: white;
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 20px;
+}
+.burger:hover
+{
+  cursor: pointer;
+}
+nav
+{
+    padding-top: 60px;
+}
+nav ul
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+    left: -100vw;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+}
+
+nav li
+{
+    list-style: none;
+    text-align: center;
+    width: 100vw;
+    height: 50px;
+    padding-top: 20px;  
+}
+nav a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: ease-in 0.5s;
+     &:hover
+  {
+    border-bottom: 1px solid white;
+  }
+}
+.toggle:checked ~ nav ul
+{
+  left: 0;
+}
+
+@media only screen and (min-width: 768px){
+ nav
+ {
+     all: unset;
+ }
+    nav ul
+     {
+       all: unset;
+       position: fixed;
+       display: flex;
+       right: 0;
+     }
+   nav li
+     {
+       all: unset;
+       padding: 2vw;
+     }
+   
+     
+    .burger
+     {
+       display: none;
+     }
+   }

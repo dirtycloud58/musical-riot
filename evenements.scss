@@ -1,0 +1,105 @@
+@import './layout/header';
+@import './layout/footer';
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body
+{
+  overflow-x: hidden;
+}
+
+iframe
+{
+  display: flex;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.position
+{
+  text-align: center;
+  padding: 20px;
+}
+.btn
+{
+  width: 120px;
+  height: 30px;
+  font-weight: bold;
+  background-color: white;
+  color: rgb(255, 166, 38);
+  border: 2px solid rgb(255, 166, 38);
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.btn:hover
+{
+  filter: drop-shadow(0 0 0.5rem rgb(255, 166, 38));
+  cursor: pointer;
+  background-color: rgb(255, 166, 38);
+  color: white;
+}
+.text-evenements
+{
+    text-align: center;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+}
+.text-festival
+{
+    text-align: center;
+}
+.img-evenements
+{
+  width: 70vw;
+  max-width: 600px;
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+}
+.festival2019
+{
+    margin-top: 20px;
+}
+.section
+{
+  width: 100vw;
+}
+h1, h2, h3, h4, h5
+{
+  text-align: center;
+  margin: 15px;
+}
+p
+{
+  padding: 20px;
+}
+li
+{
+    list-style: none;
+    text-align: center;
+}
+.position1, .position2
+{
+    width: 90vw;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 1024px){
+
+  .section
+  {
+
+    width: 80vw;
+    margin: 0 auto;
+    padding: 2vw;
+  }
+
+}
+@media only screen and (min-width: 1440px){
+  .section
+  {
+    width: 60vw;
+  }
+
+}

@@ -2,7 +2,7 @@
 {
   width: 100vw;
   height: 60px;
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: black;
   z-index: 100;
@@ -63,7 +63,12 @@ nav a
 {
   left: 0;
 }
-
+.img
+{
+  margin-top: 60px;
+  width: 100vw;
+  height: auto;
+}
 @media only screen and (min-width: 768px){
  nav
  {

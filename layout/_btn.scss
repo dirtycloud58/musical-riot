@@ -1,0 +1,23 @@
+.btn
+{
+  width: 120px;
+  height: 30px;
+  font-weight: bold;
+  background-color: white;
+  color: rgb(255, 166, 38);
+  border: 2px solid rgb(255, 166, 38);
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.btn:hover
+{
+  filter: drop-shadow(0 0 0.5rem rgb(255, 166, 38));
+  cursor: pointer;
+  background-color: rgb(255, 166, 38);
+  color: white;
+}
+.position
+{
+  text-align: center;
+  padding: 20px;
+}

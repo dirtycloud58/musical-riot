@@ -18,10 +18,12 @@
   margin-right: 20px;
   margin-top: 20px;
   height: 20px;
+  transition: all 0.2s;
 }
 
 .burger:hover {
   cursor: pointer;
+  color: orange;
 }
 
 nav {
@@ -34,7 +36,7 @@ nav ul {
   height: 100vh;
   background-color: black;
   left: -100vw;
-  transition: all 0.5s;
+  transition: all 0.2s;
   margin: 0;
   padding: 0;
 }
@@ -51,10 +53,10 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  transition: ease-in 0.5s;
+  transition: ease-in 0.3s;
 }
 nav a:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid orange;
 }
 
 .toggle:checked ~ nav ul {
@@ -145,6 +147,29 @@ footer p {
   padding: 20px 20px 0 20px;
 }
 
+.btn {
+  width: 120px;
+  height: 30px;
+  font-weight: bold;
+  background-color: white;
+  color: #ffa626;
+  border: 2px solid #ffa626;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  filter: drop-shadow(0 0 0.5rem #ffa626);
+  cursor: pointer;
+  background-color: #ffa626;
+  color: white;
+}
+
+.position {
+  text-align: center;
+  padding: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -166,4 +191,75 @@ h1 {
 
 p {
   padding: 20px;
+  text-align: center;
+}
+
+.adresse {
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 2px solid orange;
+  border-bottom: 2px solid orange;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+form {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 10px;
+}
+
+label.inline-label {
+  display: inline-block;
+}
+
+fieldset {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: rgba(255, 165, 0, 0.5);
+  text-align: center;
+}
+
+form input, form select, form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+}
+
+form input[type=radio],
+form input[type=checkbox],
+form input[type=submit] {
+  width: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .adresse {
+    width: 60vw;
+  }
+
+  form {
+    max-width: 60%;
+  }
+
+  form input, form select, form textarea {
+    width: 60%;
+  }
 }/*# sourceMappingURL=contact.css.map */

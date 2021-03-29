@@ -18,10 +18,12 @@
   margin-right: 20px;
   margin-top: 20px;
   height: 20px;
+  transition: all 0.2s;
 }
 
 .burger:hover {
   cursor: pointer;
+  color: orange;
 }
 
 nav {
@@ -34,7 +36,7 @@ nav ul {
   height: 100vh;
   background-color: black;
   left: -100vw;
-  transition: all 0.5s;
+  transition: all 0.2s;
   margin: 0;
   padding: 0;
 }
@@ -51,10 +53,10 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  transition: ease-in 0.5s;
+  transition: ease-in 0.3s;
 }
 nav a:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid orange;
 }
 
 .toggle:checked ~ nav ul {
@@ -145,29 +147,6 @@ footer p {
   padding: 20px 20px 0 20px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-iframe {
-  display: flex;
-  border-radius: 5px;
-  margin: 10px auto;
-  width: 300px;
-  height: 200px;
-}
-
-.position {
-  text-align: center;
-  padding: 20px;
-}
-
 .btn {
   width: 120px;
   height: 30px;
@@ -184,6 +163,29 @@ iframe {
   cursor: pointer;
   background-color: #ffa626;
   color: white;
+}
+
+.position {
+  text-align: center;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+iframe {
+  display: flex;
+  border-radius: 5px;
+  margin: 10px auto;
+  width: 300px;
+  height: 200px;
 }
 
 .text-evenements {

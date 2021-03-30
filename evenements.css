@@ -18,7 +18,7 @@
   margin-right: 20px;
   margin-top: 20px;
   height: 20px;
-  transition: all 0.2s;
+  transition: color 0.3s ease-in;
 }
 
 .burger:hover {
@@ -36,9 +36,7 @@ nav ul {
   height: 100vh;
   background-color: black;
   left: -100vw;
-  transition: all 0.2s;
-  margin: 0;
-  padding: 0;
+  transition: left 0.3s ease;
 }
 
 nav li {
@@ -53,7 +51,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  transition: ease-in 0.3s;
+  transition: border-bottom 0.3s ease;
 }
 nav a:hover {
   border-bottom: 1px solid orange;
@@ -83,7 +81,8 @@ nav a:hover {
 
   nav li {
     all: unset;
-    padding: 2vw;
+    padding: 20px;
+    list-style: none;
   }
 
   .burger {

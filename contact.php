@@ -22,9 +22,9 @@
     </label>
   <nav>
     <ul>
-      <li><a href="home.html">PRESENTATION</a></li>
-      <li><a href="evenements.html">EVENEMENTS</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="index.php">PRESENTATION</a></li>
+      <li><a href="evenements.php">EVENEMENTS</a></li>
+      <li><a href="contact.php">CONTACT</a></li>
       <li><a href="https://www.discogs.com/fr/seller/Musical_Riot/profile" target="_blank">DUBSHOP</a></li>
     </ul>
   </nav>

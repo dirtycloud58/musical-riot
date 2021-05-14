@@ -78,5 +78,5 @@ deux jours. Alliant la scène internationale et locale dans un parc magnifique.
        </div>
   <p> Copyright © 2019 Musical Riot - Tous droits réservés</p>
 </footer>
-  
+<script src="script.js"></script>
 </body></html>

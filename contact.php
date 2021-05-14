@@ -58,7 +58,7 @@
         </fieldset>
     </div>
         <div class="position">
-            <button type="submit" class="btn">ENVOYER</button>
+            <button type="submit" class="btn" id="button">ENVOYER</button>
       </form>
 </main>
 <footer id="footer">
@@ -70,6 +70,6 @@
        </div>
   <p> Copyright © 2019 Musical Riot - Tous droits réservés</p>
 </footer>
-
+<script src="script.js"></script>
   </body>
 </html>

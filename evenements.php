@@ -208,5 +208,5 @@
        </div>
   <p> Copyright © 2019 Musical Riot - Tous droits réservés</p>
 </footer>
-
+<script src="script.js"></script>
 </body></html>

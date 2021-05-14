@@ -1,6 +1,6 @@
 var button = document.getElementById('button')
 
-function (evenement)
+function evenement ()
 {
     alert('vous cliquez sur le button')
 }
